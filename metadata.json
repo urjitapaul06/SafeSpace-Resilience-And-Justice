@@ -1,0 +1,9 @@
+{
+  "name": "Safe-Space",
+  "description": "Your safety, Our priority. A comprehensive support platform for survivors, offering emergency assistance, AI-driven trauma support, legal/medical awareness, and forensic justice tools.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

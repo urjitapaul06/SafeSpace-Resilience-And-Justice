@@ -88,20 +88,20 @@ const RegistrationPage: React.FC<Props> = ({ onComplete }) => {
     <div className="min-h-screen flex flex-col items-center justify-center p-4 py-12 md:py-24 overflow-y-auto relative">
       <div className="max-w-4xl w-full bg-white dark:bg-[#0a0b10]/60 backdrop-blur-3xl rounded-[3rem] shadow-2xl p-8 md:p-14 border border-black/5 dark:border-white/10 relative z-10">
         
-        {/* Floating SOS for accessibility during form filling */}
-        <button 
-          onClick={handleEmergency}
-          className="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-16 h-16 md:w-20 md:h-20 bg-red-600 text-white rounded-full shadow-2xl animate-emergency flex flex-col items-center justify-center border-4 border-white dark:border-red-900 transition-transform active:scale-90 z-[110]"
-        >
-          <ShieldAlert size={28} />
-          <span className="text-[8px] font-black uppercase tracking-widest mt-1">SOS</span>
-        </button>
+        <div className="text-center mb-12 flex flex-col items-center">
+          {/* Rectangular SOS Button Above Heading */}
+          <button 
+            onClick={handleEmergency}
+            className="mb-8 px-10 py-4 bg-red-600 hover:bg-red-700 text-white rounded-2xl shadow-[0_0_20px_rgba(220,38,38,0.4)] animate-emergency flex items-center gap-3 transition-transform active:scale-95 border border-red-500/50"
+          >
+            <ShieldAlert size={24} />
+            <span className="text-xs font-black uppercase tracking-[0.3em]">Emergency SOS</span>
+          </button>
 
-        <div className="text-center mb-12">
           <h1 className="text-6xl font-black text-indigo-600 dark:text-white mb-2 tracking-tighter">Safe-Space</h1>
-          <p className="text-gray-500 dark:text-gray-400 font-bold text-xs uppercase tracking-[0.4em]">Initialize Forensic Shield</p>
+          <p className="text-gray-500 dark:text-gray-400 font-bold text-xs uppercase tracking-[0.4em]">Your safety, Our priority</p>
           
-          <div className="flex justify-center mt-12 gap-1 p-1 bg-gray-100 dark:bg-white/5 rounded-2xl max-w-sm mx-auto border border-black/5 dark:border-white/10 shadow-inner">
+          <div className="flex justify-center mt-12 gap-1 p-1 bg-gray-100 dark:bg-white/5 rounded-2xl max-w-sm mx-auto border border-black/5 dark:border-white/10 shadow-inner w-full">
             <button 
               type="button"
               onClick={() => setIsSignIn(false)}

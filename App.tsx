@@ -192,7 +192,7 @@ const App: React.FC = () => {
         <div className="p-6 flex items-center justify-between">
           <div className="flex flex-col">
             <h1 className="text-2xl font-bold text-gray-950 dark:text-white tracking-tight">Safe-Space</h1>
-            <p className="text-[10px] uppercase tracking-widest text-red-600 font-bold">Resilience & Justice</p>
+            <p className="text-[10px] uppercase tracking-widest text-red-600 font-bold">Your safety, Our priority</p>
           </div>
           <button className="md:hidden text-gray-400" onClick={() => setIsSidebarOpen(false)}>
             <X size={24} />
